@@ -14,9 +14,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
-/* body {
+body {
   font-family: "Poppins", sans-serif;
-} */
+}
+
 
 ::-webkit-scrollbar {
   width: 0.5rem;

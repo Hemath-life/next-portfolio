@@ -18,7 +18,7 @@ interface Props {
 const HomePage = ({ data }: Props) => {
     return (
         <>
-            <Header logo={data.main.name} />
+            <Header logo={data.main.name} navs={data.navs}/>
             <Hero mainData={data.main} />
             <Socials socials={data.socials} />
             <About aboutData={data.about} name={data.main.name} />
@@ -26,7 +26,7 @@ const HomePage = ({ data }: Props) => {
             <Projects projectsData={data.projects} />
             <Experiences experienceData={data.experiences} educationData={data.educations} />
             <Contact />
-            <CallToAction />
+            {/* <CallToAction /> */}
             <Footer socials={data.socials} name={data.main.name} />
         </>
     )
